@@ -1,7 +1,8 @@
 :root {
-    --text-color: #A31D1D;
-    --background-color: #FEF9E1;
-    --link-color: #c03939;
+    --background-color: #ead1ba;
+    --text-color:#66433f;
+    --link-color: #ffffff;
+    --other-color: #929581; 
 }
 
 * {
@@ -28,6 +29,16 @@ a {
     text-decoration: none;
 }
 
+
+#about {
+    background-color: var(--text-color);
+}
+
+#skills {
+    background-color: var(--text-color);
+    
+}
+
 /* Navabar */
 nav {
     display: flex;
@@ -38,12 +49,12 @@ nav {
     margin-right: 0px;
     padding: 0% 50px;
     height: 80px;
-    background-color: var(--background-color);
+    background-color: var(--text-color);
     border-radius: 0px;
     top: 0;
     width: 100%; /* Makes it span the full width */
     z-index: 1000; /* Ensures it stays above other elements */
-    
+    color: var(--background-color);
 }
 
 nav .right a:hover {
@@ -54,25 +65,25 @@ nav .left a{
     font-weight:bolder;
     font-size: xx-large;
     font-family:'Rochester';
-    color: var(--text-color);
+    color: var(--background-color);
 }
 
 nav .right a{
     font-size: 16px;
-    color: var(--text-color);
+    color: var(--background-color);
     margin: 0px 25px;
 }
 
 nav .right a:last-child {
-    color: var(--background-color);
-    background-color:var(--text-color);
+    color: var(--text-color);
+    background-color:var(--background-color);
     padding: 5px 10px;
     border-radius: 5px;
 }
 
 nav .right a:last-child:hover {
-    color: var(--text-color);
-    background-color:var(--background-color);
+    color: var(--background-color);
+    background-color:var(--text-color);
     padding: 5px 10px;
     border-radius: 5px;
 }
@@ -109,20 +120,18 @@ nav .right a:last-child:hover {
 
 
 #profile .name img {
-    width: 480px;
+    width: 400px;
     height: 500px;
     border: 1px solid var(--text-color);
     border-radius: 50px;
 }
 
 hr {
-    color: var(--link-color);
+    color: var(--text-color);
     margin: 0 20px;
 }
 
-#about {
-    background-color: var(--background-color);
-}
+
 
 #about .abouthead h3 {
     padding: 3px 7px;
@@ -137,7 +146,7 @@ hr {
 
 #about .about_text {
 
-    color: var(--text-color);
+    color: var(--background-color);
     margin: 30px ;
     font-family:'Poppins';
     gap: 40px;
@@ -148,21 +157,23 @@ hr {
 #skills h3 {
     padding: 3px 7px;
     margin: 0px 100px;
-    color: var(--background-color);
+    color: var(--text-color);
     font-family: 'Lobster';
     font-size: 40px;
     text-align: center;
     border-radius: 30px 0 30px 0;
-    background-color: var(--text-color);
+    background-color: var(--background-color);
 }
 
 #skills .text {
     margin: 30px;
     font-family: 'Poppins';
     font-size: 20px;
+    color: var(--background-color);
 }
 
 #skills .icons {
+    color: var(--background-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -173,7 +184,7 @@ hr {
 
 #skills .icons li{
     list-style-type: none;
-    border: 2px solid var(--text-color);
+    border: 2px solid var(--background-color);
     padding: 4px 10px;
     border-radius: 10px;
 }
@@ -181,22 +192,22 @@ hr {
 
 #skills .icons li:hover {
     list-style-type: none;
-    border: 2px solid var(--text-color);
+    border: 2px solid var(--background-color);
     padding: 4px 10px;
     border-radius: 10px;
-    background-color: var(--text-color);
-    color: var(--background-color);
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 #projects h3 {
     padding: 3px 7px;
     margin: 0px 100px;
-    color: var(--background-color);
+    color: var(--text-color);
     font-family: 'Lobster';
     font-size: 40px;
     text-align: center;
     border-radius: 30px 0 30px 0;
-    background-color: var(--text-color);
+    background-color: var(--background-color);
 }
 
 
@@ -270,6 +281,14 @@ hr {
     font-size: 25px;
     margin : 0 150px
 }
+#contact .icons a {
+    color: var(--text-color);
+}
+
+
+#contact .icons a:hover {
+    color: var(--link-color);
+}
 
 
 #contact .email {
@@ -314,6 +333,7 @@ hr {
 
     
 #skills .icons {
+    color: var(--background-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -324,7 +344,7 @@ hr {
 
 #skills .icons li{
     list-style-type: none;
-    border: 1px solid var(--text-color);
+    border: 1px solid var(--background-color);
     padding: 2px 7px;
     border-radius: 7px;
 }
@@ -332,11 +352,11 @@ hr {
 
 #skills .icons li:hover {
     list-style-type: none;
-    border: 1px solid var(--text-color);
+    border: 1px solid var(--background-color);
     padding: 2px 7px;
     border-radius: 7px;
-    background-color: var(--text-color);
-    color: var(--background-color);
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
  }
@@ -363,13 +383,13 @@ hr {
         font-weight:bolder;
         font-size: large;
         font-family:'Rochester';
-        color:var(--text-color);
+        color:var(--background-colo);
         margin: 20px;
     }
     
     nav .right a{
         font-size: 10px;
-        color: var(--text-color);
+        color: var(--background-colo);
         font-weight: bold;
         margin: 0px 5px;
         margin-right: 30px;
@@ -378,7 +398,7 @@ hr {
     nav .right a:last-child {
         color:var(--text-color);
         background-color: var(--background-color);
-        padding: 0px 0px;
+        padding: 3px 6px;
         border-radius: 5px;
     }
     
@@ -497,8 +517,8 @@ hr {
  @media (max-width:500px){
 
     #profile .name img {
-        width: 280px;
-        height: 300px;
+        width: 200px;
+        height: 250px;
         border: 1px solid var(--text-color);
         border-radius: 50px;
     }
@@ -540,7 +560,7 @@ hr {
 
     #about .about_text {
 
-        color: var(--text-color);
+        color: var(--background-color);
         margin: 30px ;
         font-family:'Poppins';
         gap: 40px;
@@ -550,14 +570,14 @@ hr {
     #skills h3 {
         padding: 2px 5px;
         margin: 0px 100px;
-        color: var(--background-color);
+        color: var(--text-color);
         font-family: 'Lobster';
         font-size: 20px;
         text-align: center;
         border-radius: 15px 0 15px 0;
       
       
-        background-color: var(--text-color);
+        background-color: var(--background-color);
     }
 
     #skills .text {
@@ -578,12 +598,12 @@ hr {
     #projects h3 {
         padding: 2px 5px;
         margin: 0px 100px;
-        color: var(--background-color);
+        color: var(--text-color);
         font-family: 'Lobster';
         font-size: 20px;
         text-align: center;
         border-radius: 15px 0 15px 0;
-        background-color: var(--text-color);
+        background-color: var(--background-color);
     }
     #projects .p1 {
         display: flex;
@@ -702,21 +722,21 @@ hr {
         font-weight:bolder;
         font-size: large;
         font-family:'Rochester';
-        color:var(--text-color);
+        color:var(--background-color);
         margin: 10px;
     }
     
     nav .right a{
         font-size: 10px;
-        color: var(--text-color);
+        color: var(--background-color);
         font-weight: lighter;
         margin: 0px 5px;
         margin-right: 10px;
     }
     
     nav .right a:last-child {
-        color:var(--text-color);
-        background-color: var(--background-color);
+        color:var(--background-color);
+        background-color: var(--text-color);
         padding: 0px 0px;
         border-radius: 5px;
     }
